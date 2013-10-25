@@ -1,7 +1,7 @@
 Identitree::Application.routes.draw do
-  root to: "tree#index"
-  get "tree/new"
-  get "tree/index"
+  resources :trees
+  
+  root to: "trees#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
