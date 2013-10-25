@@ -16,7 +16,7 @@ class TreesController < ApplicationController
 	  respond_to do |format|
 		if @tree.save
 		  format.html { redirect_to(:action=>'new') }
-		  flash[:notice] = "The tree was successfully saved!"
+		  flash[:notice] = "The tree " + @tree.common_name + " was successfully saved!"
 		  format.xml  { render :xml => @tree,
 						:status => :created, :location => @post }
 		else
