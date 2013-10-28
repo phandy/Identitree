@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131022013859) do
+ActiveRecord::Schema.define(:version => 20131027204228) do
+
+  create_table "raritys", :force => true do |t|
+    t.integer "tree_id"
+    t.integer "region_id"
+    t.boolean "is_native"
+    t.decimal "weight"
+  end
+
+  create_table "regions", :force => true do |t|
+    t.string  "region_name"
+    t.text    "description"
+    t.integer "parent_id"
+  end
 
   create_table "trees", :force => true do |t|
     t.string "common_name"
