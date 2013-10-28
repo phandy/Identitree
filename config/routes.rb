@@ -1,5 +1,6 @@
 Identitree::Application.routes.draw do
   resources :trees
+  resources :regions
   
   root to: "trees#index"
   # The priority is based upon order of creation:
