@@ -1,0 +1,21 @@
+#sidebar{
+	position:relative;
+	margin-right:0px;
+}
+.menu a:hover{
+	background:#1D4F21;
+}
+
+.menu a{
+	display:block;
+	position:relative;
+	margin:0px;
+	padding:5px;
+	border:1px solid;
+	border-top:0px;
+	background:#229922;
+	width:200px;
+}
+#top {
+	border-top:1px solid;
+}
