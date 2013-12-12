@@ -11,3 +11,19 @@
  *= require_self
  *= require_tree .
  */
+#side_menu{
+	float:left;
+	position:fixed;
+	margin:0px 0px 0px 0px;
+	left: 0px;
+	top: 0px;
+	border: 1px solid;
+	height: 100%;
+}
+
+#main{
+	position:relative;
+	margin:0px 0px 0px 0px;
+	padding: 20px 0px 0px 30px;
+	left:200px;
+}

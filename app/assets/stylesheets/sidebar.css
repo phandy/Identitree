@@ -1,9 +1,12 @@
-#sidebar{
+.menu{
 	border-top: 1px solid;
+}
+.side{
 	width:200px;
 }
 input[type=checkbox]:checked ~ label{
-	background:#1D4F21;
+	background:#177928;
+	color:#012407;
 }
 input[type=checkbox]:checked ~ label ~ .sub_menu{
 	display:block;
@@ -12,8 +15,12 @@ input[type=checkbox] ~ label ~ .sub_menu{
 	display:none;
 }
 .menu a:hover, label:hover{
-	background:#1D4F21;
-	cursor:default;
+	background:#177928;
+	color:#012407;
+}
+.menu a:hover{
+	text-decoration:underline;
+	cursor:pointer;
 }
 input[type=checkbox]{
 	display:none;
@@ -25,6 +32,6 @@ input[type=checkbox]{
 	padding:5px;
 	border:1px solid;
 	border-top:0px;
-	background:#229922;
+	color:#177928;
 }
 
