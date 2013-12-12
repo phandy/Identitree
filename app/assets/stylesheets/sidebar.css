@@ -1,12 +1,24 @@
 #sidebar{
-	position:relative;
-	margin-right:0px;
+	border-top: 1px solid;
+	width:200px;
 }
-.menu a:hover{
+input[type=checkbox]:checked ~ label{
 	background:#1D4F21;
 }
-
-.menu a{
+input[type=checkbox]:checked ~ label ~ .sub_menu{
+	display:block;
+}
+input[type=checkbox] ~ label ~ .sub_menu{
+	display:none;
+}
+.menu a:hover, label:hover{
+	background:#1D4F21;
+	cursor:default;
+}
+input[type=checkbox]{
+	display:none;
+}
+.menu a, label{
 	display:block;
 	position:relative;
 	margin:0px;
@@ -14,8 +26,5 @@
 	border:1px solid;
 	border-top:0px;
 	background:#229922;
-	width:200px;
 }
-#top {
-	border-top:1px solid;
-}
+
