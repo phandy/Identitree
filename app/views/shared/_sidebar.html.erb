@@ -3,8 +3,8 @@
 		<input type="checkbox" id="tab-1" name="tab-group-1" >
 		<label for="tab-1">Trees</label>
 		<div class="sub_menu">
-			<a>+Add</a>
-			<a>Index</a>
+			<%= link_to "+Add", controller: "trees", action: "new" %>
+			<%= link_to "Index", controller: "trees", action: "index" %>
 		</div>
 	</div>
 	
@@ -12,8 +12,8 @@
 		<input type="checkbox" id="tab-2" name="tab-group-1" >
 		<label for="tab-2">Regions</label>
 		<div class="sub_menu">
-			<a>+Add</a>
-			<a>Index</a>
+			<%= link_to "+Add", controller: "regions", action: "new" %>
+			<%= link_to "Index", controller: "regions", action: "index" %>
 		</div>
 	</div>
 </div>
