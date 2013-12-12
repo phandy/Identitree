@@ -1,1 +1,7 @@
-<h1>Identitree</h1>
+<h1>Tree Index</h1>
+
+<ul>
+<% @trees.each do |tree| %>
+<li> <%= tree.common_name %>(<%= tree.latin_name %>)</li>
+<% end %>
+</ul>
